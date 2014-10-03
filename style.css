@@ -1,0 +1,109 @@
+body{
+  background-color:#663ECB;
+  
+}
+#canvas{
+  border:5px solid black;
+  display:block;
+  margin:auto;
+  height:300px;
+  width:400px;
+}
+#text{
+  overflow: auto;
+  background-color:#132231;
+  border:5px solid black;
+  display:block;
+  margin:auto;
+  height:100px;
+  width:400px;
+  font-family:Verdana;
+  color:white;
+  text-align:center;
+  position:relative;
+}
+#nameTag{
+  overflow: auto;
+  background-color:#14AA41;
+  border:5px solid black;
+  display:block;
+  margin:auto;
+  height:50px;
+  width:400px;
+  font-family:Verdana;
+  color:white;
+  text-align:center;
+  position:relative;
+}
+
+#response{
+  overflow: auto;
+  position:relative;
+  background-color:#333333;
+  border:5px solid black;
+  display:block;
+  margin:auto;
+  height:100px;
+  width:400px;
+  font-family:Arial;
+  color:white;
+  text-align:center;
+}
+#thought{
+  color:blue;
+}
+#important{
+  color:orange;
+}
+#choice1{
+  position:relative;
+  top:-105px;
+  margin:auto;
+  display:block;
+
+}
+#choice2{
+  position:relative;
+  top:-105px;
+  margin:auto;
+  display:block;
+}
+#choice3{
+  position:relative;
+  top:-105px;
+  margin:auto;
+  display:block;
+}
+#choice4{
+  position:relative;
+  top:-105px;
+  margin:auto;
+  display:block;
+}
+#evidenceHeader{
+  background-color:#532235;
+  border:5px solid black;
+  display:block;
+  margin:auto;
+  height:50px;
+  width:600px;
+  font-family:Verdana;
+  color:white;
+  text-align:center;
+}
+#evidence{
+  overflow:scroll;
+  background-color:#132231;
+  border:5px solid black;
+  display:block;
+  margin:auto;
+  height:400px;
+  width:600px;
+  font-family:Verdana;
+  color:white;
+  text-align:center;
+}
+#evidenceBox{
+  background-color: orange;
+  border: 2px solid black;
+}
