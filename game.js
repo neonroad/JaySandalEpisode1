@@ -18,19 +18,21 @@ update = function(decision){ //main function that updates everytime a choice is 
     switch(decision){
       case 0:
         nameTag.innerHTML = "Dee Leader";
-        image.src = "http://d2rg8jfniu44sp.cloudfront.net/wp-content/uploads/2013/06/rachel-alexander.jpg";
+        image.src = "assets/DeeHappy.png";
 
         text.innerHTML = "Hey there, rookie!";
         break;
       case 1:
+        image.src = "assets/DeeNormal.png";
         text.innerHTML = "Ready for your first case?";
         break;
       case 2:
-        text.innerHTML = "Looks like a suicide case that could actually be a murder. <br> You sure you're up for this?";
+        image.src = "assets/DeeConcerned.png";
+        text.innerHTML = "Looks like a murder case... <br> You sure you're up for this?";
         break;
       case 3:
         nameTag.innerHTML = "Han Gaman";
-        image.src = "http://www.allure.com/beauty-trends/blogs/daily-beauty-reporter/2012/12/19/reza-farahan-mustache.jpg";
+        image.src = "assets/HanGaman.png";
 
         text.innerHTML = "Alrighty then. The victim is a middle aged man who goes by the name <span id='important'> Han Gaman</span>. <br> <span id='important'>Remember this.</span>";
         
@@ -46,7 +48,7 @@ update = function(decision){ //main function that updates everytime a choice is 
         break;
       case 4:
         nameTag.innerHTML = "Toddle E. Innowsent";
-        image.src = "http://arvinddevalia.images.s3.amazonaws.com/baldman1.jpg";
+        image.src = "assets/TEINormal.png";
 
         text.innerHTML = "The suspect is another man named <span id='important'> Toddle E. Innowsent </span>.";
         var victimEvidence = document.createElement("P");
@@ -60,7 +62,7 @@ update = function(decision){ //main function that updates everytime a choice is 
         break;
       case 5:
         nameTag.innerHTML = "Dee Leader";
-        image.src = "http://d2rg8jfniu44sp.cloudfront.net/wp-content/uploads/2013/06/rachel-alexander.jpg";
+        image.src = "assets/DeeConcerned.png";
 
         text.innerHTML = "Here is the autopsy report: <br> <span id='important'>Victim <strong> Han Gaman </strong> died at around <strong>2:30PM-3:00PM</strong> on <strong>December 2nd.</strong>. He was found hanging from the ceiling with a <strong>belt</strong> tied around his neck.";
         var autopsy = document.createElement("P");
@@ -75,9 +77,9 @@ update = function(decision){ //main function that updates everytime a choice is 
       case 6:
 
         nameTag.innerHTML = "Justin Time";
-        image.src = "http://3.bp.blogspot.com/_yDDXk7scWrA/TJGDju4lMkI/AAAAAAAAAGA/nVpTZxDFYmo/s400/DSCN9782.jpg";
+        image.src = "assets/JustinNormal.png";
 
-        text.innerHTML = "There was a <strong> witness </strong> who saw the crime. His name is <span id='important'> Justin Time</span>. He will be in court testifying what he saw.";
+        text.innerHTML = "There was a <strong> witness </strong> who saw the crime. His name is <span id='important'> Justin Time</span>.";
         var witnessEvidence1 = document.createElement("P");
         t = document.createTextNode("WITNESS: Justin Time, another middle-aged man who claims to have seen Toddle enter the victim's apartment right before he saw the body of Han Gaman.");
         witnessEvidence1.appendChild(t);
@@ -89,7 +91,7 @@ update = function(decision){ //main function that updates everytime a choice is 
         break;
       case 7:
         nameTag.innerHTML = "Dee Leader";
-        image.src = "http://ontrus.com/wp-content/uploads/2014/05/outstanding-vintage-hallway-design-also-white-brick-and-4-light-chandelier-plus-black-floor-100x100.jpg";
+        image.src = "assets/Photo1.png";
 
         text.innerHTML = "We also have other evidence: <br> <span id = 'important'> A <strong> photo </strong> of Toddle entering Han's apartment at 2:00 PM. <br>  </span>"
         //ENTIRE BOX
@@ -103,7 +105,7 @@ update = function(decision){ //main function that updates everytime a choice is 
         //ACTUAL PHOTO 1           
         var photoEvidence1 = document.createElement("img");
         t = document.createAttribute("src");
-        t.value = "http://ontrus.com/wp-content/uploads/2014/05/outstanding-vintage-hallway-design-also-white-brick-and-4-light-chandelier-plus-black-floor-100x100.jpg";
+        t.value = "assets/Photo1.png";
         photoEvidence1.setAttributeNode(t);
         photoBox1.appendChild(photoEvidence1); 
 
@@ -117,7 +119,7 @@ update = function(decision){ //main function that updates everytime a choice is 
         document.getElementsByTagName("P")[4].setAttributeNode(att);
       case 8:
         text.innerHTML = "<span id='important'> Another photo of Justin Time entering Han's apartment at around 2:30. </span>";
-        image.src = "http://ontrus.com/wp-content/uploads/2014/05/outstanding-vintage-hallway-design-also-white-brick-and-4-light-chandelier-plus-black-floor-100x100.jpg";
+        image.src = "assets/Photo2.png";
         
         //ENTIRE BOX
         var photoBox2 = document.createElement("DIV");
@@ -131,7 +133,7 @@ update = function(decision){ //main function that updates everytime a choice is 
         //ACTUAL PHOTO 1           
         var photoEvidence2 = document.createElement("img");
         t = document.createAttribute("src");
-        t.value = "http://ontrus.com/wp-content/uploads/2014/05/outstanding-vintage-hallway-design-also-white-brick-and-4-light-chandelier-plus-black-floor-100x100.jpg";
+        t.value = "assets/Photo2.png";
         photoEvidence2.setAttributeNode(t);
         photoBox2.appendChild(photoEvidence2);  
         //ID for Evidence Box
@@ -163,8 +165,9 @@ update = function(decision){ //main function that updates everytime a choice is 
         document.getElementsByTagName("DIV")[9].setAttributeNode(att);
         break;
       case 10:
+        image.src = "assets/DeeMad.png";
         text.innerHTML = "<span id= 'important'> <strong> DID YOU GET ALL THAT?</strong></span>";
-        image.src = "http://d2rg8jfniu44sp.cloudfront.net/wp-content/uploads/2013/06/rachel-alexander.jpg";
+        
 
         break;
       case 11:
